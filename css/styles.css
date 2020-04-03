@@ -114,10 +114,4 @@ ol {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    left: 10px;
-}
-
-.cat-mug {
-    position: relative;
-    z-index: -1;
 }
