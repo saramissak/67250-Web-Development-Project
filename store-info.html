@@ -45,14 +45,15 @@
         $(function() {
             $(".graph1").highcharts({
                 chart: {
+
+                    style: {
+                        fontFamily: 'Verdana'
+                    },
                     type: 'line'
                 },
                 title: {
-                    text: 'Monday through Saturday - Customers per Hour'
+                    text: 'Customers per Hour - Our busiest hours'
                 },
-                // subtitle: {
-                //     text: 'Graph 1'
-                // },
                 xAxis: {
                     title: {
                         text: 'Hour'
@@ -73,44 +74,11 @@
                     }
                 },
                 series: [{
-                    name: 'Time',
-                    data: [5, 10, 8, 24, 5, 7, 32, 16]
-                }]
-            });
-        });
-        $(function() {
-            $(".graph2").highcharts({
-                chart: {
-                    type: 'line'
-                },
-                title: {
-                    text: 'Sunday - Customers per Hour'
-                },
-                // subtitle: {
-                //     text: 'Graph 1'
-                // },
-                xAxis: {
-                    title: {
-                        text: 'Hour'
-                    },
-                    categories: ["12PM", "1PM", "2PM", "3PM", "4PM"]
-                },
-                yAxis: {
-                    title: {
-                        text: 'Average Number Customers'
-                    }
-                },
-                plotOptions: {
-                    line: {
-                        dataLabels: {
-                            enabled: true
-                        },
-                        enableMouseTracking: false
-                    }
-                },
-                series: [{
-                    name: 'Time',
-                    data: [50, 48, 25, 28, 27]
+                    name: 'Monday through Saturday',
+                    data: [5, 10, 8, 24, 5, 7, 32, 16],
+                }, {
+                    name: 'Sunday',
+                    data: [0, 50, 48, 25, 28, 27, 0]
                 }]
             });
         });
@@ -147,7 +115,7 @@
 
     <div class="Products">
         <h2>Store Information</h2>
-        <h5>Sorry, but our location Carnegie (South Hill) location is closed!</h5>
+        <h5>Sorry, but our location Carnegie (South Hill) location is closed! Read below for our open location</h5>
         <hr>
         <h4>Visit Our Current Location</h4>
         <div id="shop" class="container">
@@ -186,17 +154,8 @@
 
         <div class="container">
             <div class="row">
-                <div class="col s12">
-                    <ul class="tabs">
-                        <li class="tab col s3"><a class="active" href="#tab1">Monday to Saturday</a></li>
-                        <li class="tab col s3"><a href="#tab2">Sundays</a></li>
-                    </ul>
-                </div>
                 <div id="tab1" class="col s12">
                     <div id="container-graph" class="graph1"></div>
-                </div>
-                <div id="tab2" class="col s12">
-                    <div id="container-graph" class="graph2"></div>
                 </div>
             </div>
         </div>
@@ -216,7 +175,7 @@
         <div class="footer-copyright">
             <div class="container">
                 &copy; Blue Monkey Tea <br>
-                <a href="index.html">Home</a> | <a href="contact.html">Contact Us! </a> | <a href="https://www.pittsburghcuppa.com/index.html" target="_blank">Our Old Website!</a> | <a href="citations.html">Citations</a>
+                <a href="index.html ">Home</a> | <a href="https://www.pittsburghcuppa.com/index.html " target="_blank ">Our Old Website!</a> | <a href="citations.html ">Citations</a> | <a href="contact.html "> Contact Us and Join Our Mailing List! </a>
             </div>
         </div>
     </footer>

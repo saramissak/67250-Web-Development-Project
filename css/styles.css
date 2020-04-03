@@ -100,6 +100,10 @@
     color: black;
 }
 
+.price {
+    font-weight: bold;
+}
+
 hr {
     margin: 0;
 }
