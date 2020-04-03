@@ -15,11 +15,15 @@
     <!-- External link to CSS files for smart phones -->
     <link rel="stylesheet" media="screen and (max-width: 480px)" type="text/css" href="css/stylesmobile.css" />
 
+    <!-- JQuery JavaScript Files -->
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/jquery-ui.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/jquery.lightbox.min.js"></script>
 
+    <!-- My script file -->
+    <script src="js/script.js"></script>
+
+    <!-- Lightbox javascript file -->
+    <script src="js/jquery.lightbox.min.js"></script>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -31,12 +35,6 @@
 
     <link rel="stylesheet" media="all" type="text/css" href="css/nav-bar-edits.css" />
     <script>
-        $(document).ready(function() {
-            $('.collapsible').collapsible();
-        });
-        $(document).ready(function() {
-            $('.tabs').tabs();
-        });
         $(function() {
             $('#gallery a').lightBox();
         });
@@ -46,12 +44,15 @@
 </head>
 
 <body>
+    <!-- drop down menu of navigation bar -->
     <ul id="dropdown1" class="dropdown-content">
         <li><a href="products.html#tab4">All Products</a></li>
         <li><a href="products.html#tab1">Teas</a></li>
         <li><a href="products.html#tab2">Coffees</a></li>
         <li><a href="products.html#tab3">Other Products</a></li>
     </ul>
+
+    <!-- navigation bar -->
     <nav class="teal lighten-2">
         <div class="nav-wrapper">
             <a href="index.html" class="brand-logo"><img src="images/bluemonkeytea_logo_transparent_sharp.png" alt="Blue Monkey Tea logo" /></a>
@@ -64,13 +65,13 @@
         </div>
     </nav>
 
-
-
+    <!-- Header information on the top of the page -->
     <div class="Welcome">
         <h2>Welcome</h2>
         <h3>Product of the week!</h3>
         <h5>Click on the thumbnail to see full image, description, price and of each individual piece</h5>
     </div>
+    <!-- light box for product of the week -->
     <div id="content">
         <div id="content-gallery">
             <div id="gallery">
@@ -95,27 +96,32 @@
     </div>
     <div class="Welcome">
         <div class="container">
-            <p>
-                The original store was established in May of 2002. It was named Wicks & Beans, as the original merchandise consisted mostly of scented candles and coffee beans. We were located at 2207 Murray Ave, also in Squirrel Hill (down and across from Mineo's Pizza.)
-                <br><br> Since then we've become mostly a Tea Specialty store with over 400 varieties of teas in stock, and a huge assortment of:
-                <img src="images/cat-with-fish.png" alt="Cat with fish cup" class="cat-mug">
-                <ol>
-                    <li>teapots</li>
-                    <li>tea gadgets</li>
-                    <li>tea cozies</li>
-                    <li>tea wallets</li>
-                </ol>
-                </ol>
-                <br><br> We offer Tea Classes and Tea Tastings every month. We also carry over 30 types of coffee beans and some neat coffee makers!
-                <br><br> Apart from that we also attend to the sweet tooth of our customers by stocking up on international sweets, especially around Holidays.
-                <br><br> Whose a good Blue Monkey Tea? We are a good Blue Monkey Tea! And we are here to serve you! We changed our name, in an attempt, to brand ourselves nationwide.
-
-            </p>
+            <!-- information about the shop -->
+            <h3>About the Shop!</h3>
+            <div class="color-teal">
+                <p>
+                    The original store was established in May of 2002. It was named Wicks & Beans, as the original merchandise consisted mostly of scented candles and coffee beans. We were located at 2207 Murray Ave, also in Squirrel Hill (down and across from Mineo's Pizza.)
+                    <br><br> Since then we've become mostly a Tea Specialty store with over 400 varieties of teas in stock, and a huge assortment of:
+                    <img src="images/cat-with-fish.png" alt="Cat with fish cup" class="cat-mug">
+                    <ol>
+                        <li>teapots</li>
+                        <li>tea gadgets</li>
+                        <li>tea cozies</li>
+                        <li>tea wallets</li>
+                    </ol>
+                    </ol>
+                    <br><br> We offer Tea Classes and Tea Tastings every month. We also carry over 30 types of coffee beans and some neat coffee makers!
+                    <br><br> Apart from that we also attend to the sweet tooth of our customers by stocking up on international sweets, especially around Holidays.
+                    <br><br> Whose a good Blue Monkey Tea? We are a good Blue Monkey Tea! And we are here to serve you! We changed our name, in an attempt, to brand ourselves nationwide.
+                </p>
+            </div>
         </div>
+        <!-- embedded youtube video -->
         <div>
             <h3>Check out this video of our store!</h3>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/aUntXEBgfHw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
+        <!-- embedded map and caption of address and hours -->
         <div class="location ">
             <h3>Come Visit Us!</h3>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.6900811123337!2d-79.92238568460343!3d40.43786097936267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f200108c553d%3A0xa62923c0d2116c57!2sTea%20Pittsburgh%20Blue%20Monkey%20Tea!5e0!3m2!1sen!2sus!4v1585445028110!5m2!1sen!2sus "
@@ -126,6 +132,7 @@
             <p>Monday 11AM–7PM to Saturday 11AM–7PM | Sunday 12–5PM</p>
         </div>
     </div>
+    <!-- Popular items at the bottom of the page -->
     <div class="popular-items ">
         <h3>Our Items:</h3>
         <div class="items ">
@@ -145,9 +152,8 @@
     </div>
     <hr>
 
-
+    <!-- Footer for the page -->
     <footer class="page-footer ">
-
         <div class="container ">
             <div class="row ">
                 <div class="col l12 s12 ">

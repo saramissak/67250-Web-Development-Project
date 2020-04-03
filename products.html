@@ -15,9 +15,14 @@
     <!-- External link to CSS files for smart phones -->
     <link rel="stylesheet" media="screen and (max-width: 480px)" type="text/css" href="css/stylesmobile.css" />
 
+    <!-- JQuery JavaScript Files -->
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/jquery-ui.js"></script>
+
+    <!-- My script file -->
     <script src="js/script.js"></script>
+
+    <!-- Lightbox javascript file -->
     <script src="js/jquery.lightbox.min.js"></script>
 
     <!--Import Google Icon Font-->
@@ -29,8 +34,10 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
+    <!-- my navigation bar edits and footer -->
     <link rel="stylesheet" media="all" type="text/css" href="css/nav-bar-edits.css" />
-    <link rel="stylesheet" href="css/products.css">
+
+    <!-- javascript for the different tabs-->
     <script>
         $(document).ready(function() {
             $('.collapsible').collapsible();
@@ -47,12 +54,14 @@
 </head>
 
 <body>
+    <!-- Drop down menu for navigation bar -->
     <ul id="dropdown1" class="dropdown-content">
         <li><a href="products.html#tab4">All Products</a></li>
         <li><a href="products.html#tab1">Teas</a></li>
         <li><a href="products.html#tab2">Coffees</a></li>
         <li><a href="products.html#tab3">Other Products</a></li>
     </ul>
+    <!-- navigation bar -->
     <nav class="teal lighten-2">
         <div class="nav-wrapper">
             <a href="index.html" class="brand-logo"><img src="images/bluemonkeytea_logo_transparent_sharp.png" alt="Blue Monkey Tea logo" /></a>
@@ -62,14 +71,15 @@
                 <li><a href="store-info.html">Store Infomation</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
-
         </div>
     </nav>
 
+    <!-- Content of the page -->
     <div class="container">
         <h2>Products</h2>
         <div class="row">
             <div class="col s12">
+                <!-- different tabs on the page for the different products -->
                 <ul class="tabs">
                     <li class="tab col s3"><a class="active" href="#tab4">All Products</a></li>
                     <li class="tab col s3"><a href="#tab1">Teas</a></li>
@@ -78,6 +88,7 @@
                 </ul>
             </div>
 
+            <!-- contains the images of the products with the captions -->
             <div id="content">
                 <div id="tab4" class="col s12">
                     <div class="row card">
@@ -128,8 +139,8 @@
                                 <p class="price">Price: $12.99</p>
                             </div>
                         </div>
-
                     </div>
+
                     <div class="row card">
                         <div class="col s12 m6 l4">
                             <div class="text-with-caption">
@@ -152,7 +163,6 @@
                                 <p class="price">Price: $65.99</p>
                             </div>
                         </div>
-
                         <div class="col s12 m6 l4">
                             <div class="text-with-caption">
                                 <img src="images/teapots-and-tea-sets.gif" alt="Teapots and cups">
@@ -160,7 +170,6 @@
                                 <p class="price">Price: $197.97</p>
                             </div>
                         </div>
-
                         <div class="col s12 m6 l4">
                             <div class="column">
                                 <div class="text-with-caption">
@@ -180,6 +189,7 @@
                     </div>
                 </div>
                 <div></div>
+                <!-- teas tab -->
                 <div id="tab1" class="col s12">
                     <div class="row card">
                         <div class="col s12 m6 l4">
@@ -209,6 +219,7 @@
                     </div>
                 </div>
                 <div></div>
+                <!-- tab of coffees -->
                 <div id="tab2" class="col s12">
                     <div class="row card">
                         <div class="col s12 m6 l4">
@@ -235,6 +246,7 @@
                     </div>
                 </div>
                 <div></div>
+                <!-- other products tab -->
                 <div id="tab3" class="col s12">
                     <div class="row card">
                         <div class="col s12 m6 l4">
@@ -287,8 +299,8 @@
             </div>
         </div>
     </div>
+    <!-- footer of the page -->
     <footer class="page-footer ">
-
         <div class="container ">
             <div class="row ">
                 <div class="col l12 s12 ">
@@ -308,6 +320,3 @@
 </body>
 
 </html>
-
-<!-- Follow us on the bottom  -->
-<!-- Bottom put careers link, goes to a page where it has job description and form to fill out -->

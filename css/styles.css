@@ -2,13 +2,13 @@
     font-family: "Verdana";
 }
 
+.Welcome,
 .Products {
     text-align: center;
 }
 
-.Welcome {
-    text-align: center;
-}
+
+/* mainly only used for the cat mug on home page */
 
 .Welcome img {
     float: left;
@@ -32,6 +32,9 @@
     background-color: #4db6ac;
     padding: 10px;
 }
+
+
+/* edits for popular items  */
 
 .popular-items {
     text-align: center;
@@ -59,12 +62,18 @@
     width: 225px;
 }
 
+
+/* edits for the vertical line */
+
 .vertical {
-    Float: left;
+    float: left;
     height: 310px;
     width: 2px;
     background-color: black;
 }
+
+
+/* Styles for the drop down menu */
 
 .dropdown-content {
     width: max-content !important;
@@ -90,6 +99,9 @@
     margin: 0 auto;
 }
 
+
+/* makes the caption stick to the bottom of the image */
+
 .text-with-caption {
     float: left;
     text-align: center;
@@ -100,6 +112,9 @@
     color: black;
 }
 
+
+/* makes the price on the products page bold */
+
 .price {
     font-weight: bold;
 }
@@ -108,10 +123,16 @@ hr {
     margin: 0;
 }
 
+
+/* changes the width of the image */
+
 #light img {
     width: 100%;
     /* float: left; */
 }
+
+
+/* removes the numbers from the ordered list */
 
 ol {
     list-style-type: upper-roman;

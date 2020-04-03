@@ -8,39 +8,42 @@
     <meta name="description" content="Blue Monkey Tea Website">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- My CSS file for most of my CSS, excluding edits to nav bar and footer -->
     <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+
+    <!-- JQuery user interface CSS files -->
+    <!-- https://jquery.com/ -->
     <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
 
-    <!-- External link to CSS files for smart phones -->
-    <link rel="stylesheet" media="screen and (max-width: 480px)" type="text/css" href="css/stylesmobile.css" />
-
+    <!-- JQuery JavaScript Files -->
+    <!-- https://jquery.com/ -->
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/jquery-ui.js"></script>
+
+    <!-- My script file -->
     <script src="js/script.js"></script>
+
+    <!-- Lightbox javascript file -->
     <script src="js/jquery.lightbox.min.js"></script>
 
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Compiled and minified CSS -->
+    <!-- https://materializecss.com/ -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
+    <!-- Code for Navigation bar edits and footer -->
     <link rel="stylesheet" media="all" type="text/css" href="css/nav-bar-edits.css" />
-    <script>
-        $(document).ready(function() {
-            $('.collapsible').collapsible();
-        });
-        $(document).ready(function() {
-            $('.tabs').tabs();
-        });
-    </script>
 
+    <!-- High Charts JS files -->
     <script src="http://code.highcharts.com/highcharts.js"></script>
     <script src="http://code.highcharts.com/modules/exporting.js"></script>
 
+    <!-- Data for the graphs -->
     <script>
         $(function() {
             $(".graph1").highcharts({
@@ -95,12 +98,14 @@
 </head>
 
 <body>
+    <!-- Drop Down Menu -->
     <ul id="dropdown1" class="dropdown-content">
         <li><a href="products.html#tab4">All Products</a></li>
         <li><a href="products.html#tab1">Teas</a></li>
         <li><a href="products.html#tab2">Coffees</a></li>
         <li><a href="products.html#tab3">Other Products</a></li>
     </ul>
+    <!-- Navigation bar -->
     <nav class="teal lighten-2">
         <div class="nav-wrapper">
             <a href="index.html" class="brand-logo"><img src="images/bluemonkeytea_logo_transparent_sharp.png" alt="Blue Monkey Tea logo" /></a>
@@ -113,7 +118,9 @@
         </div>
     </nav>
 
+
     <div class="Products">
+        <!-- Header with news for the store -->
         <h2>Store Information</h2>
         <h5>Sorry, but our location Carnegie (South Hill) location is closed! Read below for our open location</h5>
         <hr>
@@ -122,6 +129,7 @@
             <img src="images/blue-monkey-tea-shop.png" alt="Blue Monkey Tea Shop">
         </div>
         <div class="container">
+            <!-- Table containing store information -->
             <table>
                 <tr>
                     <th>Address</th>
@@ -146,12 +154,14 @@
                     <td></td>
                 </tr>
             </table>
+            <!-- Div and embedded Google map -->
             <div class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.6900811123337!2d-79.92238568460343!3d40.43786097936267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f200108c553d%3A0xa62923c0d2116c57!2sTea%20Pittsburgh%20Blue%20Monkey%20Tea!5e0!3m2!1sen!2sus!4v1585445028110!5m2!1sen!2sus"
                     width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
         </div>
 
+        <!-- For graph with Busy hours -->
         <div class="container">
             <div class="row">
                 <div id="tab1" class="col s12">
@@ -161,8 +171,8 @@
         </div>
     </div>
     <hr>
+    <!-- footer of the page -->
     <footer class="page-footer">
-
         <div class="container">
             <div class="row">
                 <div class="col l12 s12">

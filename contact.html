@@ -26,8 +26,11 @@
     <!-- Makes modifications to the materialize.css -->
     <link rel="stylesheet" media="all" type="text/css" href="css/nav-bar-edits.css" />
 
+    <!-- JQuery JavaScript Files -->
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/jquery-ui.js"></script>
+
+    <!-- My script file -->
     <script src="js/script.js"></script>
     <script>
         $(document).ready(function() {
@@ -41,12 +44,14 @@
 </head>
 
 <body>
+    <!-- drop down menu for the nav bar -->
     <ul id="dropdown1" class="dropdown-content">
         <li><a href="products.html#tab4">All Products</a></li>
         <li><a href="products.html#tab1">Teas</a></li>
         <li><a href="products.html#tab2">Coffees</a></li>
         <li><a href="products.html#tab3">Other Products</a></li>
     </ul>
+    <!-- navigation bar -->
     <nav class="teal lighten-2">
         <div class="nav-wrapper">
             <a href="index.html" class="brand-logo"><img src="images/bluemonkeytea_logo_transparent_sharp.png" alt="Blue Monkey Tea logo" /></a>
@@ -56,16 +61,15 @@
                 <li><a href="store-info.html">Store Infomation</a></li>
                 <li class="active"><a href="contact.html">Contact Us</a></li>
             </ul>
-
         </div>
     </nav>
 
+    <!-- form for contact -->
     <div class="Products">
         <h2>Contact Us!</h2>
         <div class="row">
             <form class="col s12" onsubmit="return validate()" action="mailto:100teacups@gmail.com" method="post" enctype="text/plain">
                 <div class="row">
-
                     <div class="input-field col s6">
                         <i class="material-icons prefix">account_circle</i>
                         <input id="first_name" type="text" class="validate" maxlength="25" required>
@@ -114,7 +118,7 @@
                         </label>
                     </div>
                 </div>
-
+                <!-- submit button -->
                 <button class="btn waves-effect waves-light" type="submit" name="action">Submit
                     <i class="material-icons right">send</i>
                 </button>
@@ -122,8 +126,8 @@
         </div>
     </div>
     <hr>
+    <!-- footer -->
     <footer class="page-footer">
-
         <div class="container">
             <div class="row">
                 <div class="col l12 s12">
