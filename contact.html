@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Sara Missak">
+    <meta name="keywords" content="Blue Monkey Tea, Pittsburgh, PA">
+    <meta name="description" content="Blue Monkey Tea Website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="all" />
+
+    <!-- Makes modifications to the materialize.css -->
+    <link rel="stylesheet" media="all" type="text/css" href="css/nav-bar-edits.css" />
+
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".dropdown-trigger").dropdown({
+                hover: false
+            });
+        });
+    </script>
+
+    <title>Contact - Blue Monkey Tea</title>
+</head>
+
+<body>
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="products.html#tab4">All Products</a></li>
+        <li><a href="products.html#tab1">Teas</a></li>
+        <li><a href="products.html#tab2">Coffees</a></li>
+        <li><a href="products.html#tab3">Other Products</a></li>
+    </ul>
+    <nav class="teal lighten-2">
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo"><img src="images/bluemonkeytea_logo_transparent_sharp.png" alt="Blue Monkey Tea logo" /></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Products<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a href="store-info.html">Store Infomation</a></li>
+                <li class="active"><a href="contact.html">Contact Us</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="Products">
+        <h2>Contact Us!</h2>
+        <div class="row">
+            <form class="col s12" onsubmit="return validate()" action="mailto:100teacups@gmail.com" method="post" enctype="text/plain">
+                <div class="row">
+
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="first_name" type="text" class="validate" maxlength="25" required>
+                        <label for="first_name">First Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="last_name" type="text" class="validate" maxlength="100" required>
+                        <label for="last_name">Last Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">home</i>
+                        <input id="zip_code" type="tel" class="validate" maxlength="5">
+                        <label for="zip_code">Zip Code</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">phone</i>
+                        <input id="telephone" type="tel" class="validate" maxlength="10" required>
+                        <label for="telephone">Phone Number (No dashes or parentheses)</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">email</i>
+                        <input id="email" type="email" class="validate" maxlength="50" required>
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">mode_edit</i>
+                        <textarea id="Questions_Comments_Concerns_Messages" class="materialize-textarea" maxlength="250"></textarea>
+                        <label for="Questions_Comments_Concerns_Messages">Question, Comments, Concerns, Messages</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <label>
+                        <input type="checkbox" checked="checked" id="subscribe"/>
+                        <span></span>
+                        <label for="subscribe">Would you like to subscribe to Blue Monkey Tea’s coupon weekly flyer? </label>
+                        </label>
+                    </div>
+                </div>
+
+                <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                    <i class="material-icons right">send</i>
+                </button>
+            </form>
+        </div>
+    </div>
+    <hr>
+    <footer class="page-footer">
+
+        <div class="container">
+            <div class="row">
+                <div class="col l12 s12">
+                    <a href="mailto:100teacups@gmail.com" target="_blank"><img src="images/email.png" alt="email"></a>
+                    <a href="https://www.instagram.com/bluemonkeytea/" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+                    <a href="https://www.facebook.com/TeaPittsburgh/" target="_blank"><img src="images/facebook.png" alt="facebook"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                &copy; Blue Monkey Tea <br>
+                <a href="index.html">Home</a> | <a href="contact.html">Contact Us! </a> | <a href="https://www.pittsburghcuppa.com/index.html" target="_blank">Our Old Website!</a> | <a href="citations.html">Citations</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<!-- Follow us on the bottom  -->
+<!-- Bottom put careers link, goes to a page where it has job description and form to fill out -->

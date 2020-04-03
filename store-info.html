@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Sara Missak">
+    <meta name="keywords" content="Blue Monkey Tea, Pittsburgh, PA">
+    <meta name="description" content="Blue Monkey Tea Website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+
+    <!-- External link to CSS files for smart phones -->
+    <link rel="stylesheet" media="screen and (max-width: 480px)" type="text/css" href="css/stylesmobile.css" />
+
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.lightbox.min.js"></script>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link rel="stylesheet" media="all" type="text/css" href="css/nav-bar-edits.css" />
+    <script>
+        $(document).ready(function() {
+            $('.collapsible').collapsible();
+        });
+        $(document).ready(function() {
+            $('.tabs').tabs();
+        });
+    </script>
+
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+    <script>
+        $(function() {
+            $(".graph1").highcharts({
+                chart: {
+                    type: 'line'
+                },
+                title: {
+                    text: 'Monday through Saturday - Customers per Hour'
+                },
+                // subtitle: {
+                //     text: 'Graph 1'
+                // },
+                xAxis: {
+                    title: {
+                        text: 'Hour'
+                    },
+                    categories: ["11AM", "12PM", "1PM", "2PM", "3PM", "4PM", "5PM", "6PM"]
+                },
+                yAxis: {
+                    title: {
+                        text: 'Average Number Customers'
+                    }
+                },
+                plotOptions: {
+                    line: {
+                        dataLabels: {
+                            enabled: true
+                        },
+                        enableMouseTracking: false
+                    }
+                },
+                series: [{
+                    name: 'Time',
+                    data: [5, 10, 8, 24, 5, 7, 32, 16]
+                }]
+            });
+        });
+        $(function() {
+            $(".graph2").highcharts({
+                chart: {
+                    type: 'line'
+                },
+                title: {
+                    text: 'Sunday - Customers per Hour'
+                },
+                // subtitle: {
+                //     text: 'Graph 1'
+                // },
+                xAxis: {
+                    title: {
+                        text: 'Hour'
+                    },
+                    categories: ["12PM", "1PM", "2PM", "3PM", "4PM"]
+                },
+                yAxis: {
+                    title: {
+                        text: 'Average Number Customers'
+                    }
+                },
+                plotOptions: {
+                    line: {
+                        dataLabels: {
+                            enabled: true
+                        },
+                        enableMouseTracking: false
+                    }
+                },
+                series: [{
+                    name: 'Time',
+                    data: [50, 48, 25, 28, 27]
+                }]
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('.collapsible').collapsible();
+        });
+        $(document).ready(function() {
+            $('.tabs').tabs();
+        });
+    </script>
+    <title>Store Information - Blue Monkey Tea</title>
+</head>
+
+<body>
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="products.html#tab4">All Products</a></li>
+        <li><a href="products.html#tab1">Teas</a></li>
+        <li><a href="products.html#tab2">Coffees</a></li>
+        <li><a href="products.html#tab3">Other Products</a></li>
+    </ul>
+    <nav class="teal lighten-2">
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo"><img src="images/bluemonkeytea_logo_transparent_sharp.png" alt="Blue Monkey Tea logo" /></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Product<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li class="active"><a href="store-info.html">Store Infomation</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="Products">
+        <h2>Store Information</h2>
+        <h5>Sorry, but our location Carnegie (South Hill) location is closed!</h5>
+        <hr>
+        <h4>Visit Our Current Location</h4>
+        <div id="shop" class="container">
+            <img src="images/blue-monkey-tea-shop.png" alt="Blue Monkey Tea Shop">
+        </div>
+        <div class="container">
+            <table>
+                <tr>
+                    <th>Address</th>
+                    <td>5872 Forbes Ave, Pittsburgh, PA 15217</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <tr>
+                        <th>Hours</th>
+                        <td>Monday 11AM–7PM to Saturday 11AM–7PM</td>
+                        <td> Sunday 12–5PM</td>
+                    </tr>
+                </tr>
+                <tr>
+                    <th>Phone Number</th>
+                    <td>(412) 422-1606</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td><a href="mailto:100teacups@gmail.com">100teacups@gmail.com</a></td>
+                    <td></td>
+                </tr>
+            </table>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.6900811123337!2d-79.92238568460343!3d40.43786097936267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f200108c553d%3A0xa62923c0d2116c57!2sTea%20Pittsburgh%20Blue%20Monkey%20Tea!5e0!3m2!1sen!2sus!4v1585445028110!5m2!1sen!2sus"
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <ul class="tabs">
+                        <li class="tab col s3"><a class="active" href="#tab1">Monday to Saturday</a></li>
+                        <li class="tab col s3"><a href="#tab2">Sundays</a></li>
+                    </ul>
+                </div>
+                <div id="tab1" class="col s12">
+                    <div id="container-graph" class="graph1"></div>
+                </div>
+                <div id="tab2" class="col s12">
+                    <div id="container-graph" class="graph2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <footer class="page-footer">
+
+        <div class="container">
+            <div class="row">
+                <div class="col l12 s12">
+                    <a href="mailto:100teacups@gmail.com" target="_blank"><img src="images/email.png" alt="email"></a>
+                    <a href="https://www.instagram.com/bluemonkeytea/" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+                    <a href="https://www.facebook.com/TeaPittsburgh/" target="_blank"><img src="images/facebook.png" alt="facebook"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                &copy; Blue Monkey Tea <br>
+                <a href="index.html">Home</a> | <a href="contact.html">Contact Us! </a> | <a href="https://www.pittsburghcuppa.com/index.html" target="_blank">Our Old Website!</a> | <a href="citations.html">Citations</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

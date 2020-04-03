@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Sara Missak">
+    <meta name="keywords" content="Blue Monkey Tea, Pittsburgh, PA">
+    <meta name="description" content="Blue Monkey Tea Website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery.lightbox.css" />
+
+    <!-- External link to CSS files for smart phones -->
+    <link rel="stylesheet" media="screen and (max-width: 480px)" type="text/css" href="css/stylesmobile.css" />
+
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.lightbox.min.js"></script>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link rel="stylesheet" media="all" type="text/css" href="css/nav-bar-edits.css" />
+    <link rel="stylesheet" href="css/products.css">
+    <script>
+        $(document).ready(function() {
+            $('.collapsible').collapsible();
+        });
+        $(document).ready(function() {
+            $('.tabs').tabs();
+        });
+        $(function() {
+            $('#gallery a').lightBox();
+        });
+    </script>
+
+    <title>Products - Blue Monkey Tea</title>
+</head>
+
+<body>
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="products.html#tab4">All Products</a></li>
+        <li><a href="products.html#tab1">Teas</a></li>
+        <li><a href="products.html#tab2">Coffees</a></li>
+        <li><a href="products.html#tab3">Other Products</a></li>
+    </ul>
+    <nav class="teal lighten-2">
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo"><img src="images/bluemonkeytea_logo_transparent_sharp.png" alt="Blue Monkey Tea logo" /></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a class="dropdown-trigger" href="#!" data-target="dropdown1">Products<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a href="store-info.html">Store Infomation</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>Products</h2>
+        <div class="row">
+            <div class="col s12">
+                <ul class="tabs">
+                    <li class="tab col s3"><a class="active" href="#tab4">All Products</a></li>
+                    <li class="tab col s3"><a href="#tab1">Teas</a></li>
+                    <li class="tab col s3"><a href="#tab2">Coffee</a></li>
+                    <li class="tab col s3"><a href="#tab3">Other Products</a></li>
+                </ul>
+            </div>
+
+            <div id="content">
+                <div id="tab4" class="col s12">
+                    <div class="row card">
+                        <div class="col s12 m6 l4">
+                            <div class="text-with-caption">
+                                <img src="images/apple-spice-tea-black-1-4-lb-loose-15.jpeg" alt="Apple Spice Black Loose Tea">
+                                <p>Apple Spice Black Loose Tea</p>
+                                <p>2oz Price: $4.50</p>
+                                <p>8oz Price: $13.99</p>
+                            </div>
+                        </div>
+                        <div class="col s12 m6 l4">
+                            <div class="text-with-caption">
+                                <img src="images/chocolate-black-tea-loose-tea-1-4lb-13.jpeg" alt="Chocolate Tea, with Chocolate Chips, Loose Leaf Tea">
+                                <p>Chocolate Tea, Loose Leaf Tea</p>
+                                <p>2oz Price: $4.50</p>
+                                <p>8oz Price: $13.99</p>
+                            </div>
+                        </div>
+                        <div class="col s12 m6 l4">
+                            <div class="text-with-caption">
+                                <img src="images/chai-spiced-black-tea-loose-tea-1-4lb-19.gif" alt="Chai - Classic Chai Spiced Tea, Loose Leaf Tea">
+                                <p>Classic Chai Spiced Tea, Loose Leaf Tea</p>
+                                <p>2oz Price: $4.50</p>
+                                <p>8oz Price: $13.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row card">
+                        <div class="col s12 m6 l4">
+                            <div class="text-with-caption">
+                                <img src="images/amaretto-coffee-1-lb-17.jpeg" alt="Amaretto Coffee 1 lb">
+                                <p>Amaretto Coffee 1 lb</p>
+                                <p>Price: $12.99</p>
+                            </div>
+                        </div>
+                        <div class="col s12 m6 l4">
+                            <div class="text-with-caption">
+                                <img src="images/hazelnut-supreme-coffee-1-lb-17.jpeg" alt="Hazelnut Supreme Coffee 1 lb">
+                                <p>Hazelnut Supreme Coffee 1 lb</p>
+                                <p>Price: $12.99</p>
+                            </div>
+                        </div>
+                        <div class="col s12 m6 l4">
+                            <div class="text-with-caption">
+                                <img src="images/orange-coffee-4.jpeg" alt="Orange Coffee 1 lb">
+                                <p>Orange Coffee 1 lb</p>
+                                <p>Price: $12.99</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row card">
+                        <div class="col s12 m6 l4">
+                            <div class="text-with-caption">
+                                <img src="images/tetsubin-cast-iron-teapot-shimizu-28oz-15.gif" alt="Tetsubin Cast Iron Teapot with Trivet, Shimizu, 25oz, Price: $65.99">
+                                <p>Cast Iron Teapot with Trivet, Shimizu</p>
+                                <p>Price: $65.99</p>
+                            </div>
+                        </div>
+                        <div class="col s12 m6 l4">
+                            <div class="text-with-caption">
+                                <img src="images/tetsubin-cast-iron-teapot-with-trivet-otani-25oz-18.gif" alt="Tetsubin Cast Iron Teapot with Trivet, Otani, 25oz">
+                                <p>Cast Iron Teapot with Trivet, Otani</p>
+                                <p>Price: $65.99</p>
+                            </div>
+                        </div>
+                        <div class="col s12 m6 l4">
+                            <div class="text-with-caption">
+                                <img src="images/tetsubin-cast-iron-teapot-miyazaki-25oz-15.gif" alt="Tetsubin Cast Iron Teapot with Trivet, Miyazaki, 25oz, Price: $65.99">
+                                <p>Cast Iron Teapot with Trivet, Miyazaki</p>
+                                <p>Price: $65.99</p>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m6 l4">
+                            <div class="text-with-caption">
+                                <img src="images/teapots-and-tea-sets.gif" alt="Teapots and cups">
+                                <p>Tea Pot Set </p>
+                                <p>Price: $197.97</p>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m6 l4">
+                            <div class="column">
+                                <div class="text-with-caption">
+                                    <img src="images/yixing-teapot-set-phoenix-with-two-dragon-cups-18oz-26.gif" alt="Yixing Teapot Set Phoenix with Two Dragon Cups 18oz">
+                                    <p>Yixing Teapot Phoenix with 2 Dragon Cups</p>
+                                    <p>Price: $59.99</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m6 l4">
+                            <div class="text-with-caption">
+                                <img src="images/dodo-cat-mugs-11oz-set-of-2-15.gif.png" alt="Dodo cat mugs, 11oz set of 2">
+                                <p>Dodo cat mugs, set of 2</p>
+                                <p>Price: $15.98</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div></div>
+                <div id="tab1" class="col s12">
+                    <div class="row card">
+                        <div class="col s12 m6 l4">
+                            <div class="text-with-caption">
+                                <img src="images/apple-spice-tea-black-1-4-lb-loose-15.jpeg" alt="Apple Spice Black Loose Tea">
+                                <p>Apple Spice Black Loose Tea</p>
+                                <p>2oz Price: $4.50</p>
+                                <p>8oz Price: $13.99</p>
+                            </div>
+                        </div>
+                        <div class="col s12 m6 l4">
+                            <div class="text-with-caption">
+                                <img src="images/chocolate-black-tea-loose-tea-1-4lb-13.jpeg" alt="Chocolate Tea, with Chocolate Chips, Loose Leaf Tea">
+                                <p>Chocolate Tea, Loose Leaf Tea</p>
+                                <p>2oz Price: $4.50</p>
+                                <p>8oz Price: $13.99</p>
+                            </div>
+                        </div>
+                        <div class="col s12 m6 l4">
+                            <div class="text-with-caption">
+                                <img src="images/chai-spiced-black-tea-loose-tea-1-4lb-19.gif" alt="Chai - Classic Chai Spiced Tea, Loose Leaf Tea">
+                                <p>Classic Chai Spiced Tea, Loose Leaf Tea</p>
+                                <p>2oz Price: $4.50</p>
+                                <p>8oz Price: $13.99</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div></div>
+                <div id="tab2" class="col s12">
+                    <div class="row card">
+                        <div class="col s12 m6 l4">
+                            <div class="text-with-caption">
+                                <img src="images/amaretto-coffee-1-lb-17.jpeg" alt="Amaretto Coffee 1 lb">
+                                <p>Amaretto Coffee 1 lb</p>
+                                <p>Price: $12.99</p>
+                            </div>
+                        </div>
+                        <div class="col s12 m6 l4">
+                            <div class="text-with-caption">
+                                <img src="images/hazelnut-supreme-coffee-1-lb-17.jpeg" alt="Hazelnut Supreme Coffee 1 lb">
+                                <p>Hazelnut Supreme Coffee 1 lb</p>
+                                <p>Price: $12.99</p>
+                            </div>
+                        </div>
+                        <div class="col s12 m6 l4">
+                            <div class="text-with-caption">
+                                <img src="images/orange-coffee-4.jpeg" alt="Orange Coffee 1 lb">
+                                <p>Orange Coffee 1 lb</p>
+                                <p>Price: $12.99</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div></div>
+                <div id="tab3" class="col s12">
+                    <div class="row card">
+                        <div class="col s12 m6 l4">
+                            <div class="text-with-caption">
+                                <img src="images/tetsubin-cast-iron-teapot-shimizu-28oz-15.gif" alt="Tetsubin Cast Iron Teapot with Trivet, Shimizu, 25oz, Price: $65.99">
+                                <p>Cast Iron Teapot with Trivet, Shimizu</p>
+                                <p>Price: $65.99</p>
+                            </div>
+                        </div>
+                        <div class="col s12 m6 l4">
+                            <div class="text-with-caption">
+                                <img src="images/tetsubin-cast-iron-teapot-with-trivet-otani-25oz-18.gif" alt="Tetsubin Cast Iron Teapot with Trivet, Otani, 25oz">
+                                <p>Cast Iron Teapot with Trivet, Otani</p>
+                                <p>Price: $65.99</p>
+                            </div>
+                        </div>
+                        <div class="col s12 m6 l4">
+                            <div class="text-with-caption">
+                                <img src="images/tetsubin-cast-iron-teapot-miyazaki-25oz-15.gif" alt="Tetsubin Cast Iron Teapot with Trivet, Miyazaki, 25oz, Price: $65.99">
+                                <p>Cast Iron Teapot with Trivet, Miyazaki</p>
+                                <p>Price: $65.99</p>
+                            </div>
+                        </div>
+                        <div class="col s12 m6 l4">
+                            <div class="text-with-caption">
+                                <img src="images/teapots-and-tea-sets.gif" alt="Teapots and cups">
+                                <p>Tea Pot Set </p>
+                                <p>Price: $197.97</p>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m6 l4">
+                            <div class="column">
+                                <div class="text-with-caption">
+                                    <img src="images/yixing-teapot-set-phoenix-with-two-dragon-cups-18oz-26.gif" alt="Yixing Teapot Set Phoenix with Two Dragon Cups 18oz">
+                                    <p>Yixing Teapot Phoenix with 2 Dragon Cups</p>
+                                    <p>Price: $59.99</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m6 l4">
+                            <div class="text-with-caption">
+                                <img src="images/dodo-cat-mugs-11oz-set-of-2-15.gif.png" alt="Dodo cat mugs, 11oz set of 2">
+                                <p>Dodo cat mugs, set of 2</p>
+                                <p>Price: $15.98</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer ">
+
+        <div class="container ">
+            <div class="row ">
+                <div class="col l12 s12 ">
+                    <a href="mailto:100teacups@gmail.com " target="_blank "><img src="images/email.png " alt="email "></a>
+                    <a href="https://www.instagram.com/bluemonkeytea/ " target="_blank "><img src="images/instagram.png " alt="Instagram "></a>
+                    <a href="https://www.facebook.com/TeaPittsburgh/ " target="_blank "><img src="images/facebook.png " alt="facebook "></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright ">
+            <div class="container ">
+                &copy; Blue Monkey Tea <br>
+                <a href="index.html ">Home</a> | <a href="contact.html ">Contact Us! </a> | <a href="https://www.pittsburghcuppa.com/index.html " target="_blank ">Our Old Website!</a> | <a href="citations.html ">Citations</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<!-- Follow us on the bottom  -->
+<!-- Bottom put careers link, goes to a page where it has job description and form to fill out -->
